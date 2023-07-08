@@ -4,3 +4,6 @@
 .bg-custom-dark {
     background-color: #303030c9;
 }
+.font-size-custom {
+    font-size: 10px !important;
+}
