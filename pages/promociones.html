@@ -9,7 +9,7 @@
     <link rel="icon" href="../Images/plane-logo-white.png">
 </head>
 <body>
-    
+
 <header>
     <nav class="navbar navbar-expand-lg bg-custom-orange">
         <div class="container-fluid">
@@ -30,4 +30,69 @@
             </div>
         </div>
     </nav>
+
+    <form>
+        <div class="bg-custom-buscador m-5">
+            <div class="ms-5 px-5">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="mb-3 form-check ">
+                    <input type="checkbox" class="form-check-input titulos-buscador" id="exampleCheck1">
+                    <label class="form-check-label " for="exampleCheck1">Ida y Vuelta</label>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input titulos-buscador" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Solo ida</label>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input titulos-buscador" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Multidestino</label>
+                </div>
+            </div>
+            </div>
+
+            <div class="mb-3 px-5">
+                <label for="exampleInputEmail1" class="form-label"> <h4 class="titulos-buscador">Salgo de</h4></label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ingrese las 3 primeras letras" aria-describedby="emailHelp">
+             
+            </div>
+            <div class="mb-3 px-5">
+                <label for="exampleInputEmail1" class="form-label"> <h4 class="titulos-buscador">Voy a</h4></label>
+                <input type="text" class="form-control" placeholder="Ingrese las 3 primeras letras" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+            </div>
+            <div class="mb-3 px-5">
+                <label for="exampleInputEmail1" class="form-label"> <h5 class="titulos-buscador">Salida</h5></label>
+                <input type="date">
+            <div class="mb-3 ">
+                <label for="exampleInputEmail1" class="form-label"> <h5 class="titulos-buscador">Regreso</h5></label>
+                <input type="date">
+            </div>
+            <div class="mb-3 form-check ">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label titulos-buscador" for="exampleCheck1">Todavia no tengo fechas definidas</label>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"> <h4 class="titulos-buscador">Personas</h4></label>
+                <input type="text" class="form-control" placeholder="Ingrese la cantidad de pasajeros" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+            </div>
+            <div>
+                <label for="clase" class="titulos-buscador"><h4>Clase </h4></label>
+                    <select name="paises">
+                        <option value="01">Todas</option>
+                        <option value="02">Econòmica</option>
+                        <option value="03">Premium</option>
+                        <option value="04">Business</option>
+                    </select>
+            </div>
+            <button type="submit" class="btn btn-danger px-5 mt-5">Buscar</button>
+        </div>
+    </form>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
 </header>
