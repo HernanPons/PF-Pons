@@ -13,14 +13,3 @@
 .titulos-buscador {
     color: white;
 }
-
-@media (max-widht: 768px) {
-    .footer-buscador {
-    
-    }
-@media (min-width: 769px){
-    .footer-buscador {
-        padding-bottom: 0px;
-    }
-}
-}
