@@ -7,3 +7,20 @@
 .font-size-custom {
     font-size: 10px !important;
 }
+.bg-custom-buscador {
+    background-color: #404040cc;
+}
+.titulos-buscador {
+    color: white;
+}
+
+@media (max-widht: 768px) {
+    .footer-buscador {
+    
+    }
+@media (min-width: 769px){
+    .footer-buscador {
+        padding-bottom: 0px;
+    }
+}
+}
