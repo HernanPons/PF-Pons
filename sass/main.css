@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .bg-custom-orange {
   background-color: rgba(234, 101, 34, 0.8901960784);
 }
@@ -18,15 +19,30 @@
   color: white;
 }
 
-.disneyContainer {
-  margin: 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  border: solid 2px;
+.bg-custom-disney {
   background-color: rgba(21, 13, 255, 0.9254901961);
+  color: #6A94CD;
 }
 
+@media (min-width: 768px) {
+  .disneyContainer {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    border: solid 2px;
+    background-color: rgba(21, 13, 255, 0.9254901961);
+  }
+  .carouselContainer {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .carouselDisney, .textoDisney {
+    margin: 20px;
+    color: black;
+  }
+}
 .logoDisney img {
   width: 100%;
   height: auto;
@@ -37,23 +53,32 @@
   height: 100%;
 }
 
-.carouselContainer {
-  margin: 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.carouselDisney {
-  margin: 40px;
-  color: black;
-}
-
 @media (max-width: 768px) {
-  .disneyContainer {
-    grid-template-columns: 1fr;
-    margin: 5px;
-  }
-  .logoDisney {
+  .logoDisney, .carouselDisney, .textoDisney p, h6 {
     display: none;
   }
+  .textoDisney h4 {
+    text-align: center;
+  }
+}
+.zoomContainer {
+  overflow: hidden;
+}
+
+.zoomImg {
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+.zoomImg:hover {
+  transform: scale(1.2);
+}
+
+.imagen-zoom {
+  /* Propiedades de la imagen sin hacer zoom */
+  transition: transform 0.3s ease; /* Agregamos una transición suave para el efecto de zoom */
+  transform-origin: center; /* Establecemos el punto de origen de la transformación en el centro de la imagen */
+}
+.imagen-zoom:hover {
+  /* Propiedades de la imagen al pasar el mouse por encima */
+  transform: scale(1.2); /* Hacemos zoom en la imagen aumentando su escala al 120% */
 }/*# sourceMappingURL=main.css.map */
