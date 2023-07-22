@@ -70,16 +70,72 @@
 }
 
 
+/*                                                          AUTOS */
 
 
-.imagen-zoom {
-    /* Propiedades de la imagen sin hacer zoom */
-    transition: transform 0.3s ease; /* Agregamos una transición suave para el efecto de zoom */
-    transform-origin: center; /* Establecemos el punto de origen de la transformación en el centro de la imagen */
-    
-    &:hover {
-      /* Propiedades de la imagen al pasar el mouse por encima */
-      transform: scale(1.2); /* Hacemos zoom en la imagen aumentando su escala al 120% */
+.buscador {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.bannerAutos {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    display: inline-block;
+    img {
+        width: 100%;
     }
-  }
-  
+}
+
+.formularioAutos {
+    display: grid;
+    grid-template-columns: 3fr repeat(5, 1fr);   
+}
+
+
+.buscadorAutos {
+    label {
+        display: block;
+    }
+    input {
+        display: block;
+    }
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    .botonBuscador {
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 1080px) {
+
+    .formularioAutos {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas de 1 fr cada una */
+        grid-template-rows: 1fr 1fr 1fr 1fr; /* 4 filas, cada una de 1 fr */
+    }
+}
+
+@media (max-width: 768px) {
+    .formularioAutos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .buscadorAutos {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
