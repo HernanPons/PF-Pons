@@ -139,3 +139,50 @@
     
 }
 
+
+
+
+/*                                      Movimiento header */
+
+
+$imagen-ancho: 60px;
+$movimiento-distancia: 150vh;
+$movimiento-distancia-mobile: 350px;
+$tiempo-animacion: 4s;
+
+.containerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: $imagen-ancho;
+        position: relative;
+        animation: mover-avion $tiempo-animacion ease-in-out 1;
+    }
+}
+
+@keyframes mover-avion {
+    0%, 100% {
+        left: 0;
+    }
+    50% {
+        left: $movimiento-distancia;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .containerLogo img {
+      animation: mover-avion-mobile $tiempo-animacion ease-in-out 1;
+    }
+}
+  
+    @keyframes mover-avion-mobile {
+        0%, 100% {
+        left: 0;
+    }
+    50% {
+      left: $movimiento-distancia-mobile;
+    }
+}
+
+
