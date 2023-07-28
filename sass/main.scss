@@ -47,7 +47,7 @@
 
 
 @media (max-width: 768px){
-    .logoDisney, .carouselDisney, .textoDisney p, h6 {
+    .logoDisney, .carouselDisney, .textoDisney p, .displayNoneMobile {
         display: none;
     }
     .textoDisney h4 {
@@ -74,7 +74,7 @@
 
 
 .buscador {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -122,8 +122,8 @@
 @media (max-width: 1080px) {
 
     .formularioAutos {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas de 1 fr cada una */
-        grid-template-rows: 1fr 1fr 1fr 1fr; /* 4 filas, cada una de 1 fr */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
     }
 }
 
@@ -131,6 +131,10 @@
     .formularioAutos {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
+    }
+    .buscador {
+        position: relative;
+        top: 200px;
     }
     .buscadorAutos {
         display: flex;
@@ -185,4 +189,5 @@ $tiempo-animacion: 4s;
     }
 }
 
+/*                                      footer  */
 
