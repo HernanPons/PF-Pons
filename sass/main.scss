@@ -1,59 +1,6 @@
-.bg-custom-orange {
-    background-color: #ea6522e3;
-}
-.bg-custom-dark {
-    background-color: #303030c9;
-}
-.font-size-custom {
-    font-size: 12px !important;
-}
-.bg-custom-buscador {
-    background-color: #404040cc;
-}
-.titulos-buscador {
-    color: white;
-}
-.bg-custom-disney {
-    background-color: #150dffec;
-    color: #6A94CD;
-}
-@media (min-width: 768px) {
-    .disneyContainer { 
-        margin: 50px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-        border: solid 2px ;
-        background-color: #150dffec;
-    }
-    .carouselContainer {
-        margin: 50px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .carouselDisney, .textoDisney{
-        margin: 20px;
-        color: black;
-    }
-}
-.logoDisney img{
-    width: 100%;
-    height: auto;
-}
-.videoDisney iframe{ 
-    width: 100%;
-    height: 100%;
-}
-
-
-@media (max-width: 768px){
-    .logoDisney, .carouselDisney, .textoDisney p, .displayNoneMobile {
-        display: none;
-    }
-    .textoDisney h4 {
-        text-align: center;
-    }
-}
+@import "bgColorsHover.scss";
+@import "disney.scss";
+@import "autos.scss";
 
 
 .zoomContainer {
@@ -68,83 +15,6 @@
         
     }
 }
-
-
-/*                                                          AUTOS */
-
-
-.buscador {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.bannerAutos {
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-    display: inline-block;
-    img {
-        width: 100%;
-    }
-}
-
-.formularioAutos {
-    display: grid;
-    grid-template-columns: 3fr repeat(5, 1fr);   
-}
-
-
-.buscadorAutos {
-    label {
-        display: block;
-    }
-    input {
-        display: block;
-    }
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-    .botonBuscador {
-        margin: 10px;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-
-@media (max-width: 1080px) {
-
-    .formularioAutos {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr 1fr 1fr; 
-    }
-}
-
-@media (max-width: 768px) {
-    .formularioAutos {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-    }
-    .buscador {
-        position: relative;
-        top: 200px;
-    }
-    .buscadorAutos {
-        display: flex;
-        flex-direction: column;
-    }
-    
-}
-
-
-
 
 /*                                      Movimiento header */
 
@@ -172,6 +42,7 @@ $tiempo-animacion: 4s;
     50% {
         left: $movimiento-distancia;
     }
+    
 }
 
 @media screen and (max-width: 767px) {
@@ -189,5 +60,52 @@ $tiempo-animacion: 4s;
     }
 }
 
-/*                                      footer  */
+/*                                      comprar  */
+
+.comprarImages {
+    max-width: 960px;
+    height: auto;
+    img {
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.comprarContainer {
+    margin: 1%;
+    margin-right: 3%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+
+    h3, h6 {
+        text-align: justify;
+    }
+    p {
+        text-align: end;
+    }
+
+    .comprarTexto {
+        a {
+            position: absolute;
+            right: 10px;
+            margin-right: 2%;
+        }
+    }
+    
+}
+
+/*                                      destinos */
+
+.comprarDestinos {
+    @media (max-width: 767px) {
+        display: block;
+        height: 700px;
+    }
+}
+
+
+
 

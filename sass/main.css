@@ -23,6 +23,10 @@
   color: #6A94CD;
 }
 
+.nav-link:hover, .navbar-brand:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
 @media (min-width: 768px) {
   .disneyContainer {
     margin: 50px;
@@ -56,31 +60,21 @@
   .logoDisney, .carouselDisney, .textoDisney p, .displayNoneMobile {
     display: none;
   }
-  .textoDisney h4 {
+  .videoDisney {
+    width: 100%;
+    height: 200px;
+  }
+  .textoDisney h4, h1 {
     text-align: center;
   }
 }
-.zoomContainer {
-  overflow: hidden;
-}
-
-.zoomImg {
-  transition: transform 0.3s ease;
-  transform-origin: center;
-}
-.zoomImg:hover {
-  transform: scale(1.2);
-}
-
-/*                                                          AUTOS */
 .buscador {
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
-  max-width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.65));
   padding: 20px;
   border-radius: 10px;
 }
@@ -93,6 +87,7 @@
 }
 .bannerAutos img {
   width: 100%;
+  height: auto;
 }
 
 .formularioAutos {
@@ -120,7 +115,7 @@
 @media (max-width: 1080px) {
   .formularioAutos {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 @media (max-width: 768px) {
@@ -136,7 +131,23 @@
     display: flex;
     flex-direction: column;
   }
+  .btn-center {
+    display: flex;
+    justify-content: center;
+  }
 }
+.zoomContainer {
+  overflow: hidden;
+}
+
+.zoomImg {
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+.zoomImg:hover {
+  transform: scale(1.2);
+}
+
 /*                                      Movimiento header */
 .containerLogo {
   display: flex;
@@ -170,4 +181,41 @@
     left: 350px;
   }
 }
-/*                                      footer  *//*# sourceMappingURL=main.css.map */
+/*                                      comprar  */
+.comprarImages {
+  max-width: 960px;
+  height: auto;
+}
+.comprarImages img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.comprarContainer {
+  margin: 1%;
+  margin-right: 3%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
+.comprarContainer h3, .comprarContainer h6 {
+  text-align: justify;
+}
+.comprarContainer p {
+  text-align: end;
+}
+.comprarContainer .comprarTexto a {
+  position: absolute;
+  right: 10px;
+  margin-right: 2%;
+}
+
+/*                                      destinos */
+@media (max-width: 767px) {
+  .comprarDestinos {
+    display: block;
+    height: 700px;
+  }
+}/*# sourceMappingURL=main.css.map */

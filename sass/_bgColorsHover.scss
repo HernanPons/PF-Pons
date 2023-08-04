@@ -5,7 +5,7 @@
     background-color: #303030c9;
 }
 .font-size-custom {
-    font-size: 10px !important;
+    font-size: 12px !important;
 }
 .bg-custom-buscador {
     background-color: #404040cc;
@@ -13,3 +13,11 @@
 .titulos-buscador {
     color: white;
 }
+.bg-custom-disney {
+    background-color: #150dffec;
+    color: #6A94CD;
+}
+.nav-link:hover, .navbar-brand:hover {
+    box-shadow: 5px 5px 5px rgb(0,0,0,0.3);
+}
+

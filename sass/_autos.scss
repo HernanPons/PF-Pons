@@ -1,0 +1,73 @@
+.buscador {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.90), rgba(0, 0, 0, 0.65));
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.bannerAutos {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    display: inline-block;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.formularioAutos {
+    display: grid;
+    grid-template-columns: 3fr repeat(5, 1fr);   
+}
+
+
+.buscadorAutos {
+    label {
+        display: block;
+    }
+    input {
+        display: block;
+    }
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    .botonBuscador {
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 1080px) {
+
+    .formularioAutos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr; 
+    }
+}
+
+@media (max-width: 768px) {
+    .formularioAutos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .buscador {
+        position: relative;
+        top: 200px;
+    }
+    .buscadorAutos {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-center {
+        display: flex;
+        justify-content: center;
+    }
+    
+}
